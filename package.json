@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.3",
+    "nodemailer": "^8.0.5",
+    "nodemon": "^3.1.14",
+    "resend": "^6.11.0"
+  }
+}
