@@ -9,7 +9,7 @@ const app = express()
 
 app.use(cors({
     methods: ["POST", "GET"],
-    origin:[ "http://localhost:5173"]
+    origin:[ "http://localhost:5173","ahsan-exe.netlify.app"]
 }))
 
 app.use(express.json())
