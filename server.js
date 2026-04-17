@@ -8,7 +8,7 @@ dotenv.config()
 const app = express()
 
 
-app.options("*",cors())
+
 app.use(cors({
     methods: ["POST", "GET"],
     origin:[ "http://localhost:5173",
