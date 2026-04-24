@@ -1,9 +1,10 @@
 import express from "express"
 import cors from "cors"
 import dotenv from "dotenv"
+dotenv.config()
 import cookieParser from "cookie-parser"
 import {Resend} from "resend"
-dotenv.config()
+
 
 const app = express()
 
