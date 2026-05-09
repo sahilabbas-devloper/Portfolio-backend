@@ -10,7 +10,14 @@ const app = express()
 
 app.use(cors({
     methods:["POST","GET"],
-    origin:["http://localhost:5173","https://ahsan-exe.netlify.app"]
+    origin: function(origin,callback) {
+        const allowed = ["http://localhost:5173","https://ahsan-exe.netlify.app"];
+        if (!origin || allowed.includes(origin)){
+            callback(null,true);
+        } else {
+            callback(new Error("not allowed by cors"));
+        }
+    }
 }))
 
 
