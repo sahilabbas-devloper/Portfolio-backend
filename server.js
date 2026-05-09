@@ -8,13 +8,12 @@ import {Resend} from "resend"
 
 const app = express()
 
-
-
 app.use(cors({
-    methods: ["POST", "GET"],
-    origin:[ "http://localhost:5173",
-        'https://ahsan-exe.netlify.app']
+    methods:["POST","GET"],
+    origin:["http://localhost:5173","https://ahsan-exe.netlify.app"]
 }))
+
+
 
 app.use(express.json())
 app.use(cookieParser())
